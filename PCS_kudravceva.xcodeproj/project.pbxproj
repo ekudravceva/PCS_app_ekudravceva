@@ -19,7 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		C4C571BC2F941B1E0065DD3E /* App */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = App; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4C571BC2F941B1E0065DD3E /* PCS_kudravceva */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PCS_kudravceva; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,7 +52,7 @@
 		C4C571BD2F941B1E0065DD3E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4C571BC2F941B1E0065DD3E /* App */,
+				C4C571BC2F941B1E0065DD3E /* PCS_kudravceva */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +60,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4C571BB2F941B1E0065DD3E /* App */ = {
+		C4C571BB2F941B1E0065DD3E /* PCS_kudravceva */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4C571C32F941B1E0065DD3E /* Build configuration list for PBXNativeTarget "App" */;
+			buildConfigurationList = C4C571C32F941B1E0065DD3E /* Build configuration list for PBXNativeTarget "PCS_kudravceva" */;
 			buildPhases = (
 				C4C571B82F941B1E0065DD3E /* Sources */,
 				C4C571B92F941B1E0065DD3E /* Frameworks */,
@@ -75,11 +75,11 @@
 			fileSystemSynchronizedGroups = (
 				C4C571BE2F941B1E0065DD3E /* App */,
 			);
-			name = App;
+			name = PCS_kudravceva;
 			packageProductDependencies = (
 			);
 			productName = App;
-			productReference = C4C571BC2F941B1E0065DD3E /* App */;
+			productReference = C4C571BC2F941B1E0065DD3E /* PCS_kudravceva */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -96,7 +96,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4C571B72F941B1E0065DD3E /* Build configuration list for PBXProject "App" */;
+			buildConfigurationList = C4C571B72F941B1E0065DD3E /* Build configuration list for PBXProject "PCS_kudravceva" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -110,7 +110,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4C571BB2F941B1E0065DD3E /* App */,
+				C4C571BB2F941B1E0065DD3E /* PCS_kudravceva */,
 			);
 		};
 /* End PBXProject section */
@@ -260,7 +260,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4C571B72F941B1E0065DD3E /* Build configuration list for PBXProject "App" */ = {
+		C4C571B72F941B1E0065DD3E /* Build configuration list for PBXProject "PCS_kudravceva" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4C571C12F941B1E0065DD3E /* Debug */,
@@ -269,7 +269,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4C571C32F941B1E0065DD3E /* Build configuration list for PBXNativeTarget "App" */ = {
+		C4C571C32F941B1E0065DD3E /* Build configuration list for PBXNativeTarget "PCS_kudravceva" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4C571C42F941B1E0065DD3E /* Debug */,
