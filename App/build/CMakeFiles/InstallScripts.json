@@ -1,7 +1,11 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/ekaterina/Documents/\u041c\u0418\u0420\u042d\u0410/\u041f\u041a\u0421/App/App/build/cmake_install.cmake"
+		"/Users/ekaterina/Documents/\u041c\u0418\u0420\u042d\u0410/\u041f\u041a\u0421/App/App/build/cmake_install.cmake",
+		"/Users/ekaterina/Documents/\u041c\u0418\u0420\u042d\u0410/\u041f\u041a\u0421/App/App/build/_deps/googletest-build/cmake_install.cmake",
+		"/Users/ekaterina/Documents/\u041c\u0418\u0420\u042d\u0410/\u041f\u041a\u0421/App/App/build/_deps/googletest-build/googlemock/cmake_install.cmake",
+		"/Users/ekaterina/Documents/\u041c\u0418\u0420\u042d\u0410/\u041f\u041a\u0421/App/App/build/_deps/googletest-build/googletest/cmake_install.cmake",
+		"/Users/ekaterina/Documents/\u041c\u0418\u0420\u042d\u0410/\u041f\u041a\u0421/App/App/build/tests/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

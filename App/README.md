@@ -75,3 +75,7 @@ cd build
 ./MazeApp
 ```
 
+### Запуск тестов
+```
+./tests/runTests
+```
