@@ -18,18 +18,18 @@
 
 int main() {
     int width, height;
-    std::cout << "Enter maze width (5-100): ";
+    std::cout << "Enter maze width (5-50): ";
     std::cin >> width;
-    std::cout << "Enter maze height (5-100): ";
+    std::cout << "Enter maze height (5-50): ";
     std::cin >> height;
     
     if (width < 5) width = 5;
     if (height < 5) height = 5;
-    if (width > 100) width = 100;
-    if (height > 100) height = 100;
+    if (width > 50) width = 50;
+    if (height > 50) height = 50;
     
     Labyrinth lab(width, height);
-    Visualizer visualizer(false, 200);
+    Visualizer visualizer(false, 300);
     
     int genChoice, searchChoice;
     std::cout << "Select generator (1-DFS, 2-Kruskal): ";
@@ -40,20 +40,25 @@ int main() {
     LabyrinthGenerator* generator = nullptr;
     PathFinder* finder = nullptr;
     
-    if (genChoice == 1) generator = new DFSGenerator();
-    else generator = new KruskalGenerator();
+    if (genChoice == 1) {
+        generator = new DFSGenerator();
+    } else {
+        generator = new KruskalGenerator();
+    }
     
-    if (searchChoice == 1) finder = new BFSFinder();
-    else finder = new AStarFinder();
+    if (searchChoice == 1) {
+        finder = new BFSFinder();
+    } else {
+        finder = new AStarFinder();
+    }
     
     StatisticsDecorator stats(generator, finder);
     
-    // Команды
-    GenerateMazeCommand genCmd(lab, generator, visualizer);
-    FindPathCommand findCmd(lab, finder, visualizer);
+    GenerateMazeCommand genCmd(lab, generator, stats, visualizer);
+    FindPathCommand findCmd(lab, stats, visualizer, searchChoice);
     ToggleModeCommand toggleCmd(visualizer);
     ShowStatisticsCommand statsCmd(&stats);
-    NewMazeCommand newCmd(lab, generator, visualizer);
+    NewMazeCommand newCmd(lab, generator, stats, visualizer);
     ExitCommand exitCmd;
     
     std::map<int, Command*> commands;
@@ -64,30 +69,31 @@ int main() {
     commands[5] = &newCmd;
     commands[6] = &exitCmd;
     
-    // Первичная генерация
+    // Первичная генерация (через декоратор)
+    std::cout << "\nGenerating initial maze...\n";
     stats.generate(lab);
     visualizer.draw(lab);
     
     int choice;
     while (true) {
-        std::cout << "\n=== MENU ===\n";
+        std::cout << "\nMENU\n";
         std::cout << "1. Generate maze\n";
-        std::cout << "2. Find path\n";
-        std::cout << "3. Toggle auto mode\n";
+        std::cout << "2. Find path (step by step)\n";
+        std::cout << "3. Toggle auto mode (ON/OFF)\n";
         std::cout << "4. Show statistics\n";
         std::cout << "5. New maze\n";
         std::cout << "6. Exit\n";
+        std::cout << "Current auto mode: " << (visualizer.getAutoMode() ? "ON" : "OFF") << "\n";
         std::cout << "Choice: ";
         std::cin >> choice;
         
-        if (commands.find(choice) != commands.end()) {
-            commands[choice]->execute();
+        auto it = commands.find(choice);
+        if (it != commands.end()) {
+            it->second->execute();
         } else {
             std::cout << "Invalid choice!\n";
         }
     }
     
-    delete generator;
-    delete finder;
     return 0;
 }

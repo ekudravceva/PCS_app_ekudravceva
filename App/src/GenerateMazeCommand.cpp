@@ -1,8 +1,8 @@
 #include "GenerateMazeCommand.h"
 #include <iostream>
 
-GenerateMazeCommand::GenerateMazeCommand(Labyrinth& lab, LabyrinthGenerator*& gen, Visualizer& vis)
-    : labyrinth(lab), generator(gen), visualizer(vis) {}
+GenerateMazeCommand::GenerateMazeCommand(Labyrinth& lab, LabyrinthGenerator*& gen, StatisticsDecorator& stats, Visualizer& vis)
+    : labyrinth(lab), generator(gen), statistics(stats), visualizer(vis) {}
 
 void GenerateMazeCommand::execute() {
     if (!generator) {
@@ -10,7 +10,9 @@ void GenerateMazeCommand::execute() {
         return;
     }
     std::cout << "Generating maze...\n";
-    generator->generate(labyrinth);
+    
+    // Используем декоратор для замера времени
+    statistics.generate(labyrinth);
     visualizer.draw(labyrinth);
     std::cout << "Maze generated!\n";
 }

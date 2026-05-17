@@ -5,15 +5,17 @@
 #include "Labyrinth.h"
 #include "LabyrinthGenerator.h"
 #include "Visualizer.h"
+#include "StatisticsDecorator.h"
 
 class GenerateMazeCommand : public Command {
 public:
-    GenerateMazeCommand(Labyrinth& lab, LabyrinthGenerator*& generator, Visualizer& vis);
+    GenerateMazeCommand(Labyrinth& lab, LabyrinthGenerator*& generator, StatisticsDecorator& stats, Visualizer& vis);
     void execute() override;
     
 private:
     Labyrinth& labyrinth;
     LabyrinthGenerator*& generator;
+    StatisticsDecorator& statistics;
     Visualizer& visualizer;
 };
 

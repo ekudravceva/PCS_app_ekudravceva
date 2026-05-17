@@ -369,6 +369,30 @@ src/StatisticsDecorator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MazeApp.dir/build.make CMakeFiles/MazeApp.dir/src/StatisticsDecorator.cpp.s
 .PHONY : src/StatisticsDecorator.cpp.s
 
+src/StepByStepFinder.o: src/StepByStepFinder.cpp.o
+.PHONY : src/StepByStepFinder.o
+
+# target to build an object file
+src/StepByStepFinder.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MazeApp.dir/build.make CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.o
+.PHONY : src/StepByStepFinder.cpp.o
+
+src/StepByStepFinder.i: src/StepByStepFinder.cpp.i
+.PHONY : src/StepByStepFinder.i
+
+# target to preprocess a source file
+src/StepByStepFinder.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MazeApp.dir/build.make CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.i
+.PHONY : src/StepByStepFinder.cpp.i
+
+src/StepByStepFinder.s: src/StepByStepFinder.cpp.s
+.PHONY : src/StepByStepFinder.s
+
+# target to generate assembly for a file
+src/StepByStepFinder.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MazeApp.dir/build.make CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.s
+.PHONY : src/StepByStepFinder.cpp.s
+
 src/ToggleModeCommand.o: src/ToggleModeCommand.cpp.o
 .PHONY : src/ToggleModeCommand.o
 
@@ -480,6 +504,9 @@ help:
 	@echo "... src/StatisticsDecorator.o"
 	@echo "... src/StatisticsDecorator.i"
 	@echo "... src/StatisticsDecorator.s"
+	@echo "... src/StepByStepFinder.o"
+	@echo "... src/StepByStepFinder.i"
+	@echo "... src/StepByStepFinder.s"
 	@echo "... src/ToggleModeCommand.o"
 	@echo "... src/ToggleModeCommand.i"
 	@echo "... src/ToggleModeCommand.s"

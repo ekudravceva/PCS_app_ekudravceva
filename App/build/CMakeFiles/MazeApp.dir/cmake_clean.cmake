@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MazeApp.dir/src/ShowStatisticsCommand.cpp.o.d"
   "CMakeFiles/MazeApp.dir/src/StatisticsDecorator.cpp.o"
   "CMakeFiles/MazeApp.dir/src/StatisticsDecorator.cpp.o.d"
+  "CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.o"
+  "CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.o.d"
   "CMakeFiles/MazeApp.dir/src/ToggleModeCommand.cpp.o"
   "CMakeFiles/MazeApp.dir/src/ToggleModeCommand.cpp.o.d"
   "CMakeFiles/MazeApp.dir/src/Visualizer.cpp.o"

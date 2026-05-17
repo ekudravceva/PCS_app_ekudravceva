@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/NewMazeCommand.cpp" "CMakeFiles/MazeApp.dir/src/NewMazeCommand.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/NewMazeCommand.cpp.o.d"
   "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/ShowStatisticsCommand.cpp" "CMakeFiles/MazeApp.dir/src/ShowStatisticsCommand.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/ShowStatisticsCommand.cpp.o.d"
   "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/StatisticsDecorator.cpp" "CMakeFiles/MazeApp.dir/src/StatisticsDecorator.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/StatisticsDecorator.cpp.o.d"
+  "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/StepByStepFinder.cpp" "CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/StepByStepFinder.cpp.o.d"
   "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/ToggleModeCommand.cpp" "CMakeFiles/MazeApp.dir/src/ToggleModeCommand.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/ToggleModeCommand.cpp.o.d"
   "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/Visualizer.cpp" "CMakeFiles/MazeApp.dir/src/Visualizer.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/Visualizer.cpp.o.d"
   "/Users/ekaterina/Documents/МИРЭА/ПКС/App/App/src/main.cpp" "CMakeFiles/MazeApp.dir/src/main.cpp.o" "gcc" "CMakeFiles/MazeApp.dir/src/main.cpp.o.d"

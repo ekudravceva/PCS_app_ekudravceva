@@ -6,8 +6,8 @@
 #include <chrono>
 
 struct Statistics {
-    long long genTimeMs = 0;
-    long long searchTimeMs = 0;
+    long long genTimeUs = 0;       // микросекунды для генерации
+    long long searchTimeMs = 0;    // миллисекунды для поиска
     size_t pathLength = 0;
     size_t visitedCells = 0;
 };
@@ -18,6 +18,8 @@ public:
     void generate(Labyrinth& lab) override;
     std::vector<std::pair<int,int>> findPath(Labyrinth& lab) override;
     void printStats() const;
+    void reset();
+    void updateStats(long long searchTimeMs, size_t pathLength, size_t visitedCells);
     
 private:
     LabyrinthGenerator* generator;

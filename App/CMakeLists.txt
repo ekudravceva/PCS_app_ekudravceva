@@ -18,6 +18,7 @@ set(SOURCES
     src/ToggleModeCommand.cpp
     src/ShowStatisticsCommand.cpp
     src/NewMazeCommand.cpp
+    src/StepByStepFinder.cpp
 )
 
 add_executable(MazeApp ${SOURCES})
